@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Belstat"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4cd22dee-c39e-424a-9f7d-7318fa2ce8c2"
+  }
+}

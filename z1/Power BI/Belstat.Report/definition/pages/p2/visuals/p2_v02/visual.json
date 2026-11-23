@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p2_v02",
+  "position": {
+    "x": 499.30922389272649,
+    "y": 23.717188134904511,
+    "z": 1000,
+    "height": 56.172287687931735,
+    "width": 606.66070702966272
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Выберите товар слева. Пока ничего не выбрано, показаны чёрные металлы (экспорт).",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#5b6b7b"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

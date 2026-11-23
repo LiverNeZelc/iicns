@@ -1,0 +1,17 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: ru-RU
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Торговля","Пары","Аномалии"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Торговля
+ref table Пары
+ref table Аномалии
+

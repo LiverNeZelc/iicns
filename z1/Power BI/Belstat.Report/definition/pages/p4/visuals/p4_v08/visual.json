@@ -1,0 +1,97 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p4_v08",
+  "position": {
+    "x": 360,
+    "y": 185,
+    "z": 6000,
+    "height": 270,
+    "width": 900
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Пары"
+                    }
+                  },
+                  "Property": "Год"
+                }
+              },
+              "queryRef": "Пары.Год",
+              "nativeQueryRef": "Год",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Пары"
+                    }
+                  },
+                  "Property": "Поток"
+                }
+              },
+              "queryRef": "Пары.Поток",
+              "nativeQueryRef": "Поток",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Пары"
+                    }
+                  },
+                  "Property": "Значение пары"
+                }
+              },
+              "queryRef": "Пары.Значение пары",
+              "nativeQueryRef": "Значение пары"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Экспорт и импорт по годам'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

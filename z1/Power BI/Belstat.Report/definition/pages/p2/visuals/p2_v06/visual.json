@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p2_v06",
+  "position": {
+    "x": 747.71556277935792,
+    "y": 79.889475822836246,
+    "z": 5000,
+    "height": 89.875660300690768,
+    "width": 230.93051605038602
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Значение 2021 (ряд)"
+                }
+              },
+              "queryRef": "Торговля.Значение 2021 (ряд)",
+              "nativeQueryRef": "Значение 2021 (ряд)"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'В 2021 году'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

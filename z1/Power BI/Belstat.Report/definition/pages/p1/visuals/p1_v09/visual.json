@@ -1,0 +1,97 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p1_v09",
+  "position": {
+    "x": 250,
+    "y": 465,
+    "z": 8000,
+    "height": 245,
+    "width": 500
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Год"
+                }
+              },
+              "queryRef": "Торговля.Год",
+              "nativeQueryRef": "Год",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Поток"
+                }
+              },
+              "queryRef": "Торговля.Поток",
+              "nativeQueryRef": "Поток",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Число аномалий"
+                }
+              },
+              "queryRef": "Торговля.Число аномалий",
+              "nativeQueryRef": "Число аномалий"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Скачки по годам'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

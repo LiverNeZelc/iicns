@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p1_v07",
+  "position": {
+    "x": 930,
+    "y": 80,
+    "z": 6000,
+    "height": 90,
+    "width": 320
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Индекс 2000=100 (медиана)"
+                }
+              },
+              "queryRef": "Торговля.Индекс 2000=100 (медиана)",
+              "nativeQueryRef": "Индекс 2000=100 (медиана)"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Медианный индекс'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

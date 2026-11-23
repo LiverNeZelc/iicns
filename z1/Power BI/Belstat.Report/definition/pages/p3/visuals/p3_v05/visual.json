@@ -1,0 +1,97 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p3_v05",
+  "position": {
+    "x": 250,
+    "y": 80,
+    "z": 4000,
+    "height": 300,
+    "width": 1010
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Год"
+                }
+              },
+              "queryRef": "Торговля.Год",
+              "nativeQueryRef": "Год",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Ряд"
+                }
+              },
+              "queryRef": "Торговля.Ряд",
+              "nativeQueryRef": "Ряд",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Торговля"
+                    }
+                  },
+                  "Property": "Индекс 2000=100 (медиана)"
+                }
+              },
+              "queryRef": "Торговля.Индекс 2000=100 (медиана)",
+              "nativeQueryRef": "Индекс 2000=100 (медиана)"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Индекс по товарам'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

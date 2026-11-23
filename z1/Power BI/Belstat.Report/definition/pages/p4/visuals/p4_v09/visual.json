@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p4_v09",
+  "position": {
+    "x": 360,
+    "y": 465,
+    "z": 7000,
+    "height": 245,
+    "width": 900
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Пары"
+                    }
+                  },
+                  "Property": "Год"
+                }
+              },
+              "queryRef": "Пары.Год",
+              "nativeQueryRef": "Год",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Пары"
+                    }
+                  },
+                  "Property": "Сальдо (экспорт − импорт)"
+                }
+              },
+              "queryRef": "Пары.Сальдо (экспорт − импорт)",
+              "nativeQueryRef": "Сальдо (экспорт − импорт)"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Сальдо: экспорт минус импорт'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

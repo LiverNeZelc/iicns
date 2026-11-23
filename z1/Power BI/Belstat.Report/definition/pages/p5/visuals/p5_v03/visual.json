@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p5_v03",
+  "position": {
+    "x": 19.972368955709062,
+    "y": 118.58594067452255,
+    "z": 1000,
+    "height": 601.66761479073546,
+    "width": 180.99959366111335
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Аномалии"
+                    }
+                  },
+                  "Property": "Поток"
+                }
+              },
+              "queryRef": "Аномалии.Поток",
+              "nativeQueryRef": "Поток",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Аномалии"
+                    }
+                  },
+                  "Property": "Показатель"
+                }
+              },
+              "queryRef": "Аномалии.Показатель",
+              "nativeQueryRef": "Показатель",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Аномалии"
+                    }
+                  },
+                  "Property": "Год"
+                }
+              },
+              "queryRef": "Аномалии.Год",
+              "nativeQueryRef": "Год",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Аномалии"
+                    }
+                  },
+                  "Property": "Значение"
+                }
+              },
+              "queryRef": "Аномалии.Значение",
+              "nativeQueryRef": "Значение",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Аномалии"
+                    }
+                  },
+                  "Property": "Единица"
+                }
+              },
+              "queryRef": "Аномалии.Единица",
+              "nativeQueryRef": "Единица",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Аномалии"
+                    }
+                  },
+                  "Property": "YoY, %"
+                }
+              },
+              "queryRef": "Аномалии.YoY, %",
+              "nativeQueryRef": "YoY, %",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Аномалии"
+                    }
+                  },
+                  "Property": "Аномалия"
+                }
+              },
+              "queryRef": "Аномалии.Аномалия",
+              "nativeQueryRef": "Аномалия",
+              "active": false
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Список скачков'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.15.0/schema.json",
+  "name": "p3_v02",
+  "position": {
+    "x": 19.972368955709062,
+    "y": 43.689557090613569,
+    "z": 1000,
+    "height": 36.19991873222267,
+    "width": 1239.5351483136935
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "За 100 взят 2000 год. Фильтры слева: поток и группа.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#5b6b7b"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
